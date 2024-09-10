@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViatekSample</title>
+    <link rel="stylesheet" href="./reset/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/components/header.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top--wrapper">
+                    <div class="header__top_location">
+                        <img src="./images/header/location.svg" alt="иконка локация">
+                        <div class="dropdown">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Москва
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Действие</a></li>
+                                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__top_menu--wrapper">
+                        <ul class="header__top_menu_list">
+                            <li class="header__top_menu_item"><a href="">Услуги</a></li>
+                            <li class="header__top_menu_item"><a href="">Новости</a></li>
+                            <li class="header__top_menu_item"><a href="">Портфолио</a></li>
+                            <li class="header__top_menu_item"><button type="button" class="header__top_menu_button"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span></span>
+                                </button>
+                                <!-- Модальное окно -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Заголовок
+                                                    модального окна</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Закрыть"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Закрыть</button>
+                                                <button type="button" class="btn btn-primary">Понял</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom--wrapper">
+                    <div class="header__bottom_logo"><img src="./images/header/logotip.svg" alt="logotip">
+                        <hr class="header__bottom_logo-line">
+                        <p>Мы не допускаем типовых решений,<br>
+                            нам интересно всякий раз создавать новое!</p>
+                    </div>
+                    <div class="header__bottom_form">
+                        <input class="header__bottom_input" type="text" placeholder="поиск"><button
+                            class="header__bottom_input_button"><img src="./images/header/search.svg" alt=""></button>
+                    </div>
+                    <div class="header__bottom_mode">
+                        <p>График работы:</br> <span> Пн-П т, 9:00 - 18:00</span></p>
+                    </div>
+                    <div class="header__bottom_social">
+                        <button class="header__bottom_social_button"><img src="./images/header/Vatcap.svg" alt="">
+                        </button>
+                        <button class="header__bottom_social_button"><img src="./images/header/telegramm.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="header__bottom_phone"><img src="./images/header/phone_green.svg" alt="">
+                        <button class="#">+7 910 360 63 92</button>
+                        <div class="dropdown">
+                            <button class="#" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./images/header/chevron_down_green.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Действие</a></li>
+                                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
