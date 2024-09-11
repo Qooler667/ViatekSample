@@ -17,9 +17,38 @@
                 <div class="header__top--wrapper">
                     <div class="header__top_location">
                         <img src="./images/header/location.svg" alt="иконка локация">
+                        <!--MODAL WINDOW  -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Москва
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...aaa
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Understood</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__top_phone"><img src="./images/header/phone_white.svg" alt="">
+                        <button class="#">+7 910 360 63 92</button>
                         <div class="dropdown">
-                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Москва
+                            <button class="header__top_phone_chevron" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="./images/header/chevron-down_white.svg" alt="">
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Действие</a></li>
@@ -33,36 +62,31 @@
                             <li class="header__top_menu_item"><a href="">Услуги</a></li>
                             <li class="header__top_menu_item"><a href="">Новости</a></li>
                             <li class="header__top_menu_item"><a href="">Портфолио</a></li>
-                            <li class="header__top_menu_item"><button type="button" class="header__top_menu_button"
-                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span></span>
-                                </button>
-                                <!-- Модальное окно -->
-                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Заголовок
-                                                    модального окна</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Закрыть"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                ...
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Закрыть</button>
-                                                <button type="button" class="btn btn-primary">Понял</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </li>
                         </ul>
+                        <div class="dropdown">
+                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="header__top_menu_button"><span></span></div>
+                            </button>
+                            <ul class="dropdown-menu  header__top_dropdown-menu">
+                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Another
+                                        action</a></li>
+                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Something else
+                                        here</a></li>
+                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Something else
+                                        here</a></li>
+                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Something else
+                                        here</a></li>
+                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Something else
+                                        here</a></li>
+                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Something else
+                                        here</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="header__bottom">
             <div class="container">
