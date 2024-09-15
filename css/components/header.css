@@ -48,50 +48,53 @@
      align-items: center;
  }
 
- .header__top_menu_button {
-     width: 25px;
-     height: 16px;
-     margin: 20px 30px;
+ .header__top_burger-button {
      display: flex;
      position: relative;
      align-items: center;
-     justify-content: flex-end;
+     justify-content: end;
+     padding: 0;
+     width: 24px;
+     height: 20px;
+     cursor: pointer;
+     margin: 20px 30px;
  }
 
- .header__top_menu_button>span {
-     height: 2px;
-     width: 80%;
+ .header__top_burger {
+     width: 18px;
+     height: 3px;
      background-color: #ffffff;
  }
 
- .header__top_menu_button::before,
- .header__top_menu_button::after {
+ .header__top_burger::after,
+ .header__top_burger::before {
      content: "";
      position: absolute;
+     width: 24px;
      height: 3px;
-     width: 100%;
      background-color: #ffffff;
  }
 
- .header__top_menu_button::after {
+ .header__top_burger::after {
      top: 0;
+     right: 0;
  }
 
- .header__top_menu_button::before {
+ .header__top_burger::before {
      bottom: 0;
+     right: 0;
  }
 
- .dropdown {
-     position: relative;
+ .header__top_dropdown--wrapper {
+     background-color: black;
+     padding: 50px;
  }
 
- .dropdown-menu {
-     background-color: rgb(53, 53, 53);
-     padding: 20px;
-     position: absolute;
+ .header__dropdoun_item {
+     display: flex;
  }
 
- .header__top_dropdown-item {
+ .header__dropdoun_item a {
      color: #ffffff;
  }
 
@@ -125,6 +128,7 @@
      width: 318px;
      height: 44px;
      border: 1px solid silver;
+     border-radius: 10px;
  }
 
  .header__bottom_input_button {
@@ -144,16 +148,29 @@
      gap: 10px;
  }
 
- @media (max-width:565px) {
-     .header__bottom_logo {
-         flex-direction: column;
-         text-align: center;
+
+
+ @media (max-width:1440px) {
+     .header__bottom_social {
+         display: none;
+     }
+ }
+
+ @media (max-width:1400px) {
+
+
+     .header__bottom_mode {
+         display: none;
      }
 
-     .header__bottom_logo-line {
-         width: 230px;
-         transform: rotate(0);
+     .header__bottom--wrapper {
+         margin: 30px 0;
+     }
+ }
 
+ @media (max-width:1200px) {
+     .header__bottom_phone {
+         display: none;
      }
  }
 
@@ -177,16 +194,15 @@
      }
  }
 
- @media (max-width:1400px) {
-
-     .header__bottom_social,
-     .header__bottom_mode {
-         display: none;
+ @media (max-width:565px) {
+     .header__bottom_logo {
+         flex-direction: column;
+         text-align: center;
      }
- }
 
- @media (max-width:1200px) {
-     .header__bottom_phone {
-         display: none;
+     .header__bottom_logo-line {
+         width: 230px;
+         transform: rotate(0);
+
      }
  }

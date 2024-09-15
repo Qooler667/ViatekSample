@@ -1,0 +1,8 @@
+h1 {
+    font-size: calc(35px + (- 35) * ((100vw - 320px) / (1520 - 320)));
+    margin-bottom: 0;
+}
+
+p {
+    font-size: calc(16px + (20 - 16) * ((100vw - 1520px) / (1520 - 320)));
+}

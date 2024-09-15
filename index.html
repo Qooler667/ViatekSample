@@ -7,7 +7,9 @@
     <title>ViatekSample</title>
     <link rel="stylesheet" href="./reset/reset.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/components/header.css">
+    <link rel="stylesheet" href="./css/sections/rewiew.css">
 </head>
 
 <body>
@@ -50,7 +52,7 @@
                                 aria-expanded="false">
                                 <img src="./images/header/chevron-down_white.svg" alt="">
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu ">
                                 <li><a class="dropdown-item" href="#">Действие</a></li>
                                 <li><a class="dropdown-item" href="#">Другое действие</a></li>
                                 <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
@@ -63,24 +65,40 @@
                             <li class="header__top_menu_item"><a href="">Новости</a></li>
                             <li class="header__top_menu_item"><a href="">Портфолио</a></li>
                         </ul>
-                        <div class="dropdown">
-                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="header__top_menu_button"><span></span></div>
+                        <div class="btn-group">
+                            <button class="header__top_burger-button btn" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span class="header__top_burger"></span>
                             </button>
-                            <ul class="dropdown-menu  header__top_dropdown-menu">
-                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Another
-                                        action</a></li>
-                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Something else
-                                        here</a></li>
-                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Something else
-                                        here</a></li>
-                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Something else
-                                        here</a></li>
-                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Something else
-                                        here</a></li>
-                                <li><a class="dropdown-item header__top_dropdown-item" href="#">Something else
-                                        here</a></li>
+                            <ul class="dropdown-menu header__top_dropdown--wrapper">
+                                <li class="header__dropdoun_item">
+                                    <img src="./images/header/dots.svg" alt="">
+                                    <a class="dropdown-item" href="#">Menu item</a>
+                                </li>
+                                <li class="header__dropdoun_item">
+                                    <img src="./images/header/dots.svg" alt=""><a class="dropdown-item" href="#">Menu
+                                        item</a>
+                                </li>
+                                <li class="header__dropdoun_item">
+                                    <img src="./images/header/dots.svg" alt=""><a class="dropdown-item" href="#">Menu
+                                        item</a>
+                                </li>
+                                <li class="header__dropdoun_item">
+                                    <img src="./images/header/dots.svg" alt=""><a class="dropdown-item" href="#">Menu
+                                        item</a>
+                                </li>
+                                <li class="header__dropdoun_item">
+                                    <img src="./images/header/dots.svg" alt=""><a class="dropdown-item" href="#">Menu
+                                        item</a>
+                                </li>
+                                <li class="header__dropdoun_item">
+                                    <img src="./images/header/dots.svg" alt=""><a class="dropdown-item" href="#">Menu
+                                        item</a>
+                                </li>
+                                <li class="header__dropdoun_item">
+                                    <img src="./images/header/dots.svg" alt=""><a class="dropdown-item" href="#">Menu
+                                        item</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -93,15 +111,16 @@
                 <div class="header__bottom--wrapper">
                     <div class="header__bottom_logo"><img src="./images/header/logotip.svg" alt="logotip">
                         <hr class="header__bottom_logo-line">
-                        <p>Мы не допускаем типовых решений,<br>
+                        <p>Мы не допускаем типовых решений,<br class="br">
                             нам интересно всякий раз создавать новое!</p>
                     </div>
+
                     <div class="header__bottom_form">
                         <input class="header__bottom_input" type="text" placeholder="поиск"><button
                             class="header__bottom_input_button"><img src="./images/header/search.svg" alt=""></button>
                     </div>
                     <div class="header__bottom_mode">
-                        <p>График работы:</br> <span> Пн-П т, 9:00 - 18:00</span></p>
+                        <p>График работы:<br class="br"> <span> Пн-П т, 9:00 - 18:00</span></p>
                     </div>
                     <div class="header__bottom_social">
                         <button class="header__bottom_social_button"><img src="./images/header/Vatcap.svg" alt="">
@@ -126,6 +145,35 @@
             </div>
         </div>
     </header>
+    <section class="review">
+        <div class="container">
+            <div class="row review-row">
+                <div class="review__left-col col">
+                    <div class="review__left-col--wrapper">
+                        <h1>Создаем комфортную<br class="br">среду в гармонии c<br> природой!</h1>
+                        <p>Мы любим то, что делаем. В приоритете<br class="br"> комплексный уход за садом и любой
+                            озелененной<br>
+                            территорией.
+                        </p>
+                        <div class="review__left-col_button--wrapper">
+                            <button class="review__left-col_button">Вызвать дизайнера</button>
+                        </div>
+                        <div class="review__left-col_dots">
+                            <div class="review__left-col_dot"></div>
+                            <div class="review__left-col_dot"></div>
+                            <div class="review__left-col_dot"></div>
+                            <div class="review__left-col_dot"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col review__right-col">
+                    <div class="slider">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services"></section>
 
 
 
