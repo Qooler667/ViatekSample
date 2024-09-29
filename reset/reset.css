@@ -28,12 +28,10 @@ dd {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
-ol[role='list'],
-li {
+ol[role='list'] {
     list-style: none;
+
 }
-
-
 
 /* Set core body defaults */
 body {
@@ -52,19 +50,27 @@ label {
     line-height: 1.1;
 }
 
-/* Balance text wrapping on headings ?????*/
-/* h1,
+/* Balance text wrapping on headings */
+h1,
 h2,
 h3,
 h4 {
     text-wrap: balance;
-} */
+}
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
     text-decoration-skip-ink: auto;
     color: currentColor;
+}
+
+a,
+ul,
+li {
+    list-style: none;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Make images easier to work with */
@@ -80,13 +86,6 @@ button,
 textarea,
 select {
     font: inherit;
-}
-
-button {
-    background: inherit;
-    border: none;
-    margin: 0;
-    padding: 0;
 }
 
 /* Make sure textarea without a rows attribute are not tiny */
