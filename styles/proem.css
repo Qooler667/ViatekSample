@@ -1,0 +1,10 @@
+.proem-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.proem-left__dots--wrapper {
+    display: flex;
+    gap: 10px;
+}

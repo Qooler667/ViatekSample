@@ -1,4 +1,39 @@
-.container {
-    width: 1520px;
-    margin: 0 auto;
-}
+ header {
+     margin-bottom: 50px;
+ }
+
+ section {
+     margin-bottom: 50px;
+ }
+
+ /* buttons */
+ .call-a-designer1,
+ .call-a-designer2 {
+     width: 254px;
+     height: 67px;
+     border: none;
+     border-radius: 10px;
+     color: #ffffff;
+ }
+
+ .call-a-designer1 {
+     background: linear-gradient(90deg, #26b447 0%, #006943 100%);
+ }
+
+ .call-a-designer2 {
+     background: linear-gradient(90deg, #3adc49 0%, #26b447 45.82%, #006943 100%);
+ }
+
+ .services__button {
+     display: flex;
+     align-items: center;
+     width: 210px;
+     height: 50px;
+     color: #ffffff;
+     padding: 15px 70px;
+     border-radius: 10px;
+     background: rgba(255, 255, 255, 0.18);
+     border: none;
+ }
+
+ /* buttons */
