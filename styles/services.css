@@ -9,6 +9,10 @@
     overflow: auto;
 }
 
+.services__list::-webkit-scrollbar {
+    width: 0;
+}
+
 .services__list_item {
     display: flex;
     flex-direction: column;

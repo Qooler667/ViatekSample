@@ -1,0 +1,17 @@
+.about {
+    background-color: #26B447;
+    color: #ffffff;
+}
+
+.about__left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about__text>p {
+    -webkit-line-clamp: 16;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
