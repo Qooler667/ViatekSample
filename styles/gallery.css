@@ -1,0 +1,42 @@
+.gallery--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.gallery__images--wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery__img--wrapper {
+    width: 280px;
+    height: 325px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.gallery__img,
+.gallery__img_fogging {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.gallery__img {
+    object-fit: cover;
+    transition: .4s;
+}
+
+.gallery__img_fogging {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.gallery__img--wrapper:hover .gallery__img_fogging {
+    display: none;
+}
+
+.gallery__img--wrapper:hover .gallery__img {
+    transform: scale(1.15);
+}

@@ -46,4 +46,19 @@
      background-color: inherit;
  }
 
- /* buttons */
+ .button-details2 {
+     width: 105px;
+     height: 35px;
+     border-radius: 10px;
+     border-color: #d9d9d9;
+     background-color: inherit;
+     color: #26B447;
+ }
+
+ /* buttons end */
+
+ /* links */
+ .link-green {
+     text-decoration: underline;
+     color: #26b447;
+ }

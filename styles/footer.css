@@ -1,0 +1,19 @@
+.footer {
+    background: linear-gradient(90deg, #006943 30%, #26b447 100%);
+    padding: 50px 0;
+    color: #ffffff;
+}
+
+.footer--wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__line {
+    margin: 30px 0;
+}

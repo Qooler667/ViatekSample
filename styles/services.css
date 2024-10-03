@@ -83,8 +83,3 @@
 .services__list_item:hover>.services__item-fogging>.services__button {
     display: block;
 }
-
-.services__link {
-    text-decoration: underline;
-    color: green;
-}
