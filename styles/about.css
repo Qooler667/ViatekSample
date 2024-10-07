@@ -16,3 +16,9 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+@media (max-width:991.98px) {
+    .about__button {
+        margin: 0 auto;
+    }
+}

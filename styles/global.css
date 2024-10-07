@@ -1,3 +1,18 @@
+ @font-face {
+     font-family: "noto_sans";
+     src: url(../fonts/SansNormal/NotoSans-Regular.ttf);
+ }
+
+ @font-face {
+     font-family: "myriad_pro";
+     src: url(../fonts/myriad/Myriad_Pro.ttf);
+ }
+
+ @font-face {
+     font-family: "futuris";
+     src: url(../fonts/futuris/futuris.ttf);
+ }
+
  header {
      margin-bottom: 50px;
  }
@@ -6,14 +21,33 @@
      margin-bottom: 50px;
  }
 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ button,
+ a,
+ p {
+     font-family: "noto_sans";
+ }
+
+ h1,
+ h2 {
+     font-size: 45px;
+ }
+
+
  /* buttons */
  .call-a-designer1,
  .call-a-designer2 {
      width: 254px;
      height: 67px;
      border: none;
-     border-radius: 10px;
+     font-size: 20px;
      color: #ffffff;
+     border-radius: 10px;
+
  }
 
  .call-a-designer1 {
@@ -25,40 +59,68 @@
  }
 
  .services__button {
-     display: flex;
-     align-items: center;
      width: 210px;
      height: 50px;
+     border: none;
+     display: flex;
      color: #ffffff;
      padding: 15px 70px;
      border-radius: 10px;
+     align-items: center;
      background: rgba(255, 255, 255, 0.18);
-     border: none;
+
  }
 
  .button-details1 {
-     border-radius: 10px;
-     border-color: #ffffff;
-     color: #ffffff;
-     padding: 20px;
      width: 151px;
      height: 64px;
+     padding: 20px;
+     font-size: 20px;
+     color: #ffffff;
+     border-radius: 10px;
+     border-color: #ffffff;
      background-color: inherit;
  }
 
  .button-details2 {
      width: 105px;
      height: 35px;
+     color: #26B447;
      border-radius: 10px;
      border-color: #d9d9d9;
      background-color: inherit;
-     color: #26B447;
  }
 
  /* buttons end */
 
  /* links */
  .link-green {
-     text-decoration: underline;
+     font-size: 15px;
      color: #26b447;
+     text-decoration: underline;
+ }
+
+ @media (max-width:991.98px) {
+     h2 {
+         font-size: 35px;
+     }
+
+     header,
+     section {
+         margin-bottom: 30px;
+     }
+
+     .services,
+     .news--wrapper,
+     .about__left,
+     .gallery {
+         text-align: center;
+     }
+
+     .button-details1 {
+         width: 290px;
+         height: 64px;
+         align-items: center;
+         padding: 0;
+     }
  }
