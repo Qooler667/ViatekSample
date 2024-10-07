@@ -58,3 +58,10 @@
 .gallery__img--wrapper:hover .gallery__img {
     transform: scale(1.15);
 }
+
+@media (max-width:991.98px) {
+    .gallery__img--wrapper {
+        margin-right: 15px;
+    }
+
+}

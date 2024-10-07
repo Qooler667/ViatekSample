@@ -21,7 +21,6 @@
     margin-right: 42.5px;
     border-radius: 20px;
     color: #ffffff;
-
 }
 
 .services__list_item1 {
@@ -82,4 +81,11 @@
 
 .services__list_item:hover>.services__item-fogging>.services__button {
     display: block;
+}
+
+@media (max-width:991.98px) {
+    .services__list_item {
+        margin-right: 15px;
+    }
+
 }

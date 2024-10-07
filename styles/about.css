@@ -18,7 +18,9 @@
 }
 
 @media (max-width:991.98px) {
-    .about__button {
-        margin: 0 auto;
+    .about__left {
+        padding: 30px 0;
+        gap: 30px;
     }
+
 }

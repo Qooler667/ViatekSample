@@ -206,9 +206,10 @@
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:991.98px) {
     .header-bottom--wrapper {
-        margin: 30px auto;
+        padding: 20px 0;
+        margin: 0;
     }
 
     .header-bottom {

@@ -43,6 +43,10 @@
     .footer__logo-phone {
         gap: 30px;
     }
+
+    .footer__bottom {
+        text-align: center;
+    }
 }
 
 @media (max-width:424.98px) {
